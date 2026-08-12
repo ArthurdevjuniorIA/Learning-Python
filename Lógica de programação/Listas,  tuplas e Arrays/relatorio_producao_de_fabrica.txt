@@ -8,4 +8,6 @@ alice
 10 20 30 10 0
 roberto
 30 20 10 15 40
+tutus
+100 40 50 60 10
 fim

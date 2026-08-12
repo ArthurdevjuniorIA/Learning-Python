@@ -46,7 +46,7 @@ while True:
                     nada_produzido.append(nome_funcionario[i])
             media_do_dia = soma_total/len(nome_funcionario)
             print(f"Total produzido:{soma_total}")
-            print(f"Média de produção: {media_do_dia}")
+            print(f"Média de produção: {media_do_dia:.0f}")
             print(f"Maior produtor: {nome_do_maior_produtor_dia}")
             maior_producao_do_dia = 0
             for nada in nada_produzido:

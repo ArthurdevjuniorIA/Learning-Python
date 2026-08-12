@@ -1,6 +1,7 @@
 numero = int(input())
 binario = list(map(int,input().split()))
+limpa = [item.replace(" ", "").replace(",", "") for item in binario]
 quantos_100 = 0
-if [binario::3] == 100:
-    quantos_100+=1
+for i in range(len(binario)):
+    quantidade = limpa.count(100)
 print(quantos_100)
