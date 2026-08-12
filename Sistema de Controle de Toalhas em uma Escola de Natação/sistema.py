@@ -1,12 +1,9 @@
-lista = []
+# 2. Consultar nadadores
 
-codigo, nome = map(input().split())
+print("\n========= NADADORES =========\n")
 
-codigo = int(codigo)
-
-lista.append(list(codigo, nome))
-
-lista = [
-    [100, "Nome"],
-    [100, "Nome"]
-]
+if len(codigos) > 0:
+    for i in range(len(codigos)):
+        print(f"{codigos[i]} - {nomes[i]}")
+else:
+    print("Nenhum nadador cadastrado.")
