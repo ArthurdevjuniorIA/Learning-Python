@@ -1,5 +1,3 @@
-# 2. Consultar nadadores
-
 print("\n========= NADADORES =========\n")
 
 if len(codigos) > 0:
