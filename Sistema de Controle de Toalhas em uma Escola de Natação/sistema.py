@@ -1,5 +1,5 @@
-codigo = []
-nome = []
+codigos = []
+nomes = []
 quantidade = []
 
 while True:
@@ -22,4 +22,9 @@ while True:
         codigo = input("Código:")
         nome = input("Nome:")
 
-        if codigo.isdigit() and nome.isalnum():
+        if codigo.isalnum and nome.isdigit():
+            print("")
+            print("Nadador cadastrado com sucesso!")
+            codigos.append(codigo)
+            nomes.append(nome)
+
