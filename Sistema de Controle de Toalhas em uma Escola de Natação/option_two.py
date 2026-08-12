@@ -1,4 +1,4 @@
-# 2. Consultar nadadores
+
 codigos = []
 nomes = []
 quantidades = []
@@ -48,3 +48,12 @@ while True:
     elif opcao == "0":
         print("Saindo do sistema...")
         break
+=======
+
+print("\n========= NADADORES =========\n")
+
+if len(codigos) > 0:
+    for i in range(len(codigos)):
+        print(f"{codigos[i]} - {nomes[i]}")
+else:
+    print("Nenhum nadador cadastrado.")
