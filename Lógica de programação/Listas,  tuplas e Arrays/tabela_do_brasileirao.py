@@ -1,0 +1,6 @@
+primeiros_20_colocados = ("Palmeiras","Flamengo","Atlético PR", "Fluminense","Bahia","Cruzeiro","Bragantino","Atlético-MG","Corinthians","Coritiba","Botafogo","Vitória","São Paulo","Santos","Grêmio","Mirassol","Internacional","Remo","Vasco","Chapecoense")
+print(primeiros_20_colocados[0:5])
+print(primeiros_20_colocados[-4:])
+print(sorted(primeiros_20_colocados))
+chape = primeiros_20_colocados.index("Chapecoense")
+print(chape+1)
