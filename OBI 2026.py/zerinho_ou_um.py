@@ -1,4 +1,4 @@
-'''A,B,C = map(int, input().split())
+A,B,C = map(int, input().split())
 if A != B and A!=C:
     print("A")
 elif B !=A and B!=C:
@@ -6,7 +6,7 @@ elif B !=A and B!=C:
 elif C != A and C!=B:
     print("C")
 else:
-    print("*")'''
+    print("*")
 num_1 = 'eu'
 num_2 = 'oi'
 num_1 = int(num_1)
