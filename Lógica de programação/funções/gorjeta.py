@@ -13,5 +13,5 @@ except TypeError:
 
 gorjeta = calculo_gorjeta(valor_total,porcentagem_da_gorjeta)
 todo_valor = total_valor(gorjeta)
-print("O valor da gorjeta é ",gorjeta)
+print("O valor da gorjeta é R$",gorjeta)
 print("O valor total da conta é: R$",todo_valor)
