@@ -1,9 +1,11 @@
 from random import randint as aleatorio
-possiveis = ["Pedra","Papel","Tesoura"]
-Pedra = {"Pedra":1, "Papel":2,"Tesoura":0}
-Papel = {"Papel":1, "Pedra":0,"Tesoura":1}
-Tesoura = {"Tesoura":1, "Papel":0,"Pedra":2}
-opcao_computador = possiveis[aleatorio(0,2)]
+regras = {
+    "Pedra": {"Pedra":"Empate","Tesoura":"Você venceu!","Papel":"Você perdeu!"},
+    "Papel": {"Pedra":"Você venceu!","Tesoura":"Você perdeu!","Papel":"Empate"},
+    "Tesoura": {"Pedra":"Você perdeu!","Tesoura":"Empate","Papel":"Você venceu!"}
+}
+
+opcao_computador = regras[aleatorio(0,2)]
 def verificacao(usuario,computador):
     if usuario == "Pedra":
         dict = Pedra
@@ -30,7 +32,7 @@ def comparativo(usuario,computador):
         verificacao(Tesoura,computador)
 
 opcoes = input("Escolha entre as opções de Papel,Tesoura e Papel: ").strip().title()
-if opcoes not in possiveis:
+if opcoes not in regras.keys():
     raise IndexError(print("A opção digitada não está entre as disponíveis"))
 else:
     verificacao(opcoes,opcao_computador)
