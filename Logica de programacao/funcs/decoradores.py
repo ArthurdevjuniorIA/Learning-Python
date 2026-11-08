@@ -1,4 +1,4 @@
-from time import sleep as tempo
+import time
 '''
 def meu_decorador(func):
     def wrapper():
@@ -37,17 +37,17 @@ print(soma(5, 5))
 print(subtracao(10, 3))
 
 def tempo_decorador(func):
-    def wrapper():
-        start_tempo = tempo()
+    def wrapper(*args,**kwargs):
+        start_tempo = time.time()
         func()
-        end_tempo = tempo()
-        print(f"O tempo de execução foi de: {start_tempo-end_tempo} segundos")
+        end_tempo = time.time()
+        print(f"O tempo de execução foi de: {end_tempo-start_tempo} segundos")
     return wrapper
 
 @tempo_decorador
 def fazer_um_bolo():
     print("Estou fazendo um bolo...")
-    tempo(2)
+    time.sleep(2)
     print("Terminei de fazer meu bolo")
 
 fazer_um_bolo()
